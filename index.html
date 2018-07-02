@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  
+</head>
+
+<body>
+<header id="header">
+ 
+<!--Company Logo-->
+<img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Dunder_Mifflin%2C_Inc.svg/2000px-Dunder_Mifflin%2C_Inc.svg.png" width="200rem" alt="Dunder-Mifflin Paper ?Company"/>
+
+<!--Navigation-->
+<nav id="nav-bar">
+  <ul>
+    <li class='nav-link' id="navJokes">Jokes!</li>
+    <li class='nav-link' id="navProducts">Products</li>
+    <li class='nav-link' id="navAbout">About</li>
+    <li class='nav-link' id="navHome">Home</li>
+  </ul>
+</nav>
+</header>
+
+<main>
+<!--Home Page-->
+  <div id='home'>
+    <h1>Welcome to Dunder-Mifflin!</h1>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <pclass="subheading">Let's begin.</p>
+    <input type="email" placeholder="Enter your email" id = "email" required pattern = "\w+@\w+.\w+"></input>
+    <input id="submit" type="submit"></input>
+    </form>
+  </div>
+  
+  <!--About Page (with video)-->
+  <div id='about'>
+    <h2>About</h2>
+    <p>We have a local office in beautiful Scranton, PA! Watch our ad to learn more about how our products can help you do business.</p>
+    <div style="position:relative;height:0;padding-bottom:56.25%">
+      <iframe src="https://www.youtube.com/embed/FIUSPM7xjAk?ecver=2" id="video" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <!--Products-->
+  <div  id='products'>
+    <h2>Products</h2>
+    <div class="flex-container">
+    
+    <div>
+    <div class="product">
+      <div class="box">
+        <p>Ream: 8.85</p>
+        <p>Box: 17.95</p>
+      </div>
+    </div>
+    <p class = "caption">Original White</p>
+    </div>
+    
+    <div>
+    <div class="product">
+      <div class="box">
+        <p>Ream: 9.85</p>
+        <p>Box: 19.95</p>
+      </div>
+    </div>
+    <p class = "caption">Off-White</p>
+    </div>
+    
+    <div>
+    <div class="product">
+      <div class="box">
+        <p>Ream: 9.85</p>
+        <p>Box: 19.95</p>
+      </div>
+    </div>
+    <p class = "caption">Eggshell</p>
+    </div>
+    
+  </div>
+  </div>
+
+  <!--Michael Scott Jokes page-->
+  <div id="jokes">
+    <h2>Jokes!</h2>
+    <p>Want to hear a joke about a piece of paper? Never mind... it's tearable.</p>
+    <p>What do you call a factory that sells passable products? A satisfactory.</p>
+    <p>What's brown and sticky? A stick.</p>
+    <p>Pam: “We don't recycle.” Michael: “We don't? Why have I been separating trash into whites and colors?”</p>
+  </div>
+</main>
+
+</body>
+</html>
