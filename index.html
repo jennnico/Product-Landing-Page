@@ -10,6 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
   
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 </head>
 
 <body>
@@ -30,17 +31,17 @@
 </header>
 
 <main>
-<!--Home Page-->
+  <!--Home Page-->
   <div id='home'>
     <h1>Welcome to Dunder-Mifflin!</h1>
     <form id="form" action="https://www.freecodecamp.com/email-submit">
       <pclass="subheading">Let's begin.</p>
-    <input type="email" placeholder="Enter your email" id = "email" required pattern = "\w+@\w+.\w+"></input>
-    <input id="submit" type="submit"></input>
+      <input type="email" placeholder="Enter your email" id = "email" required pattern = "\w+@\w+.\w+"></input>
+      <input id="submit" type="submit"></input>
     </form>
   </div>
   
-  <!--About Page (with video)-->
+  <!--About (with video)-->
   <div id='about'>
     <h2>About</h2>
     <p>We have a local office in beautiful Scranton, PA! Watch our ad to learn more about how our products can help you do business.</p>
@@ -49,7 +50,7 @@
     </div>
   </div>
   
-  <!--Products-->
+  <!--Exciting Products-->
   <div  id='products'>
     <h2>Products</h2>
     <div class="flex-container">
@@ -57,8 +58,8 @@
     <div>
     <div class="product">
       <div class="box">
-        <p>Ream: 8.85</p>
-        <p>Box: 17.95</p>
+        <p class="price">Ream: $8.85</p>
+        <p class="price">Box: $17.95</p>
       </div>
     </div>
     <p class = "caption">Original White</p>
@@ -67,8 +68,8 @@
     <div>
     <div class="product">
       <div class="box">
-        <p>Ream: 9.85</p>
-        <p>Box: 19.95</p>
+        <p class="price">Ream: $9.85</p>
+        <p class="price">Box: $19.95</p>
       </div>
     </div>
     <p class = "caption">Off-White</p>
@@ -77,8 +78,8 @@
     <div>
     <div class="product">
       <div class="box">
-        <p>Ream: 9.85</p>
-        <p>Box: 19.95</p>
+        <p class="price">Ream: $9.85</p>
+        <p class="price">Box: $19.95</p>
       </div>
     </div>
     <p class = "caption">Eggshell</p>
@@ -87,7 +88,7 @@
   </div>
   </div>
 
-  <!--Michael Scott Jokes page-->
+  <!--Michael Scott Jokes-->
   <div id="jokes">
     <h2>Jokes!</h2>
     <p>Want to hear a joke about a piece of paper? Never mind... it's tearable.</p>
@@ -96,6 +97,5 @@
     <p>Pam: “We don't recycle.” Michael: “We don't? Why have I been separating trash into whites and colors?”</p>
   </div>
 </main>
-
 </body>
 </html>
