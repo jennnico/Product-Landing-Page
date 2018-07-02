@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   //On load, hide everything but the Home page.
+  //On load, hide everything but the Home page.
   $('#about').hide();
   $('#products').hide();
   $('#jokes').hide();
@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('#jokes').hide();
   });
   
-    //About page
+   //About page
    $("#navAbout").on("click", function(){
     $('#home').hide();
     $('#about').hide().fadeIn(1000);
