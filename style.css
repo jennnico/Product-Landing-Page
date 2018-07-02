@@ -113,5 +113,6 @@ iframe{
 /*Prices of individual products*/
 .price{
   padding-top: .7rem;
+  font-family: 'Inconsolata', monospace;
 }
 
