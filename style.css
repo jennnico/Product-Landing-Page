@@ -1,0 +1,99 @@
+body{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/*Company Logo*/
+#header-img{
+  margin: 1rem;
+  text-align: center;
+}
+
+/*Computer and Tablet (horizontal) size*/
+@media screen and (min-width: 570px) {
+  ul{
+    position: fixed; /* Set the navbar to fixed position */
+  }
+  
+  .nav-link{
+     float:right;
+  }
+}
+
+/*Tablet (vertical) size*/
+@media screen and (max-width: 570px) {
+  body{
+    text-align: center;
+  }
+  
+  ul{
+    color: pink;
+  }
+}
+
+/*navigation bar*/
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 90%; /* Full width */
+  z-index: 1;
+}
+
+.nav-link{
+  display: block;
+  padding: 1rem;
+}
+
+.nav-link:hover {
+  background-color: #dbdbdb;
+  text-decoration: none;
+  color: black;
+  transition: .7s background-color;
+  cursor: pointer;
+}
+
+main{
+  text-align: center;
+}
+
+iframe{
+  position:absolute;
+  width:75%;
+  height:75%;
+  left:0;
+  margin-left:5rem; 
+  margin-right:5rem;
+}
+
+/*Product images*/
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-bottom:3rem;
+}
+
+
+.product{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS04wj3yh3gmeKjP7oavR8zktUjKlRYn_npB3iSCrr7edMcphuMWQ");
+  color: transparent;
+  width: 17rem;
+  height: 11rem;
+  font-size: 1.5rem;
+}
+
+.box:hover {
+  background-color: #ffffff;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  width: 18rem;
+  height: 13rem;
+}
+
+.product:hover{
+  cursor: pointer;
+  color:black;
+}
+
