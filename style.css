@@ -16,19 +16,20 @@ body{
   }
   
   .nav-link{
-     float:right;
+     float:right; /*Move individual nav buttons to the right*/
   }
 }
 
 /*Tablet (vertical) size*/
 @media screen and (max-width: 570px) {
   body{
-    text-align: center;
+    text-align: center; /*Centers header items, as well*/
   }
   
-  ul{
-    color: pink;
-  }
+  ul { 
+    display: flex;
+    flex-direction: column-reverse; /*Put items in order*/
+}  
 }
 
 /*navigation bar*/
@@ -48,15 +49,22 @@ ul {
 .nav-link:hover {
   background-color: #dbdbdb;
   text-decoration: none;
-  color: black;
   transition: .7s background-color;
   cursor: pointer;
 }
 
+/*Everything below the header*/
 main{
   text-align: center;
 }
 
+/*headings*/
+h1, h2{
+  font-family: 'Inconsolata', monospace;
+  line-height: 200%;
+}
+
+/*embedded video*/
 iframe{
   position:absolute;
   width:75%;
@@ -66,7 +74,7 @@ iframe{
   margin-right:5rem;
 }
 
-/*Product images*/
+/*Container of Product images*/
 .flex-container {
   display: flex;
   flex-flow: row wrap;
@@ -75,7 +83,7 @@ iframe{
   margin-bottom:3rem;
 }
 
-
+/*Individual Product images*/
 .product{
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS04wj3yh3gmeKjP7oavR8zktUjKlRYn_npB3iSCrr7edMcphuMWQ");
   color: transparent;
@@ -84,16 +92,26 @@ iframe{
   font-size: 1.5rem;
 }
 
+/*Make box same height as .product for hover functionality*/
+.box{
+  height: 11rem;
+}
+
+/*Add a white screen when you hover*/
 .box:hover {
   background-color: #ffffff;
   opacity: 0.6;
   filter: alpha(opacity=60); /* For IE8 and earlier */
-  width: 18rem;
-  height: 13rem;
 }
 
+/*Make text appear when you hover*/
 .product:hover{
   cursor: pointer;
   color:black;
+}
+
+/*Prices of individual products*/
+.price{
+  padding-top: .7rem;
 }
 
